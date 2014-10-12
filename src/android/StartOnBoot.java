@@ -1,4 +1,4 @@
-package com.phonegap.asxtecnologia.startup;
+package com.asxtecnologia.startup;
  
 import android.content.Intent;
 import android.net.Uri;
@@ -15,7 +15,7 @@ public class StartOnBoot extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-            Intent serviceIntent = new Intent(context, com.phonegap.asxtecnologia.startup.StartUpActivity.class);
+            Intent serviceIntent = new Intent(context, com.asxtecnologia.startup.StartUpActivity.class);
             serviceIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(serviceIntent);
                 }

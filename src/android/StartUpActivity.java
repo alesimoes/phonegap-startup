@@ -1,4 +1,4 @@
-package com.phonegap.asxtecnologia.startup;
+package com.asxtecnologia.startup;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
