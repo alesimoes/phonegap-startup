@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
 import android.content.BroadcastReceiver;
-import android.content.Context
+import android.content.Context;
 import android.view.Gravity;
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
