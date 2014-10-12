@@ -26,7 +26,7 @@ public class StartOnBoot extends BroadcastReceiver {
     		    //Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
     		    //vibrator.vibrate(2000);
     		    
-             intent = new Intent(context, com.asxtecnologia.helpme.HelpMe.class);
+             intent = new Intent(context, com.asxtecnologia.startup.StartUpActivity.class);
              intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
              context.startActivity(intent);
                 }
