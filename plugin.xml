@@ -27,8 +27,7 @@
       <feature name="Startup">
         <param name="android-package" value="com.phonegap.asxtecnologia.startup" />
       </feature>
-    </config-file>
-    <source-file src="src/android/Startup.java" target-dir="src/com/asxtecnologia/startup"/>
+    </config-file>    
     <source-file src="src/android/StartOnBoot.java" target-dir="src/com/asxtecnologia/startup"/>
     <source-file src="src/android/StartUpActivity.java" target-dir="src/com/asxtecnologia/startup"/>
      <config-file target="AndroidManifest.xml" parent="/*">
