@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.phonegap.asxtecnologia.startup"
+        version="2.0.1">
+
+  <name>Startup</name>
+
+  <description>
+   Inicia o aplicativo no no startup do aparelho
+  </description>
+
+  <license>MIT</license>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <js-module src="www/Startup.js" name="Startup">
+    <clobbers target="window.plugins.startup" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Startup">
+        <param name="android-package" value="com.phonegap.asxtecnologia.startup" />
+      </feature>
+    </config-file>
+    <source-file src="src/android/Startup.java" target-dir="/src/com/phonegap/asxtecnologia/startup"/>
+    <source-file src="src/android/StartOnBoot.java" target-dir="/src/com/phonegap/asxtecnologia/startup"/>
+    <source-file src="src/android/StartUpActivity.java" target-dir="/src/com/phonegap/asxtecnologia/startup"/>
+     <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+        </config-file>
+
+  </platform>
+
+
+</plugin>
