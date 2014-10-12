@@ -34,7 +34,7 @@
             <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
             <uses-permission android:name="android.permission.VIBRATE" />
         </config-file>   
-     <config-file target="AndroidManifest.xml" parent="/application/*">
+     <config-file target="AndroidManifest.xml" parent="/manifest/application">
 
             <receiver android:name="com.asxtecnologia.startup.StartOnBoot">
             <intent-filter>
