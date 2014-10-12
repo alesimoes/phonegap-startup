@@ -33,12 +33,14 @@
      <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
             <uses-permission android:name="android.permission.VIBRATE" />
+            <application>
             <receiver android:name="com.asxtecnologia.startup.StartOnBoot">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED">
                 </action>
             </intent-filter>
         </receiver>
+      </application>
         </config-file>
 
   </platform>
