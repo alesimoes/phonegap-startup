@@ -23,11 +23,11 @@ public class StartOnBoot extends BroadcastReceiver {
     	 Toast.makeText(context, "Help.Me has ben started.",
     		        Toast.LENGTH_LONG).show();
     		    // Vibrate the mobile phone
-    		    Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
-    		    vibrator.vibrate(2000);
+    		    //Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
+    		    //vibrator.vibrate(2000);
     		    
-            Intent serviceIntent = new Intent(context, com.asxtecnologia.startup.StartUpActivity.class);
+             intent = new Intent(context, com.asxtecnologia.helpme.HelpMe.class);
             //serviceIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            context.startActivity(serviceIntent);
+            context.startActivity(intent);
                 }
 }
