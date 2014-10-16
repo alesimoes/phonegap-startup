@@ -20,8 +20,8 @@ public class StartOnBoot extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-          Toast.makeText(context, "Boot received.",
-                    Toast.LENGTH_LONG).show();
+          //Toast.makeText(context, "Boot received.",
+          //          Toast.LENGTH_LONG).show();
                
              intent = new Intent(context, com.asxtecnologia.startup.StartService.class);             
              context.startService(intent);

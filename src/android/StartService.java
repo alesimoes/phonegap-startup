@@ -13,8 +13,8 @@ public class StartService extends Service{
     public void onCreate() {
         super.onCreate();
         //Log.d("TAG", "Service created.");
-        Toast.makeText(getApplicationContext(), "Service has ben created.",
-                Toast.LENGTH_LONG).show();
+       // Toast.makeText(getApplicationContext(), "Service has ben created.",
+       //         Toast.LENGTH_LONG).show();
       
     }
 
@@ -29,8 +29,8 @@ public class StartService extends Service{
         getApplicationContext().startActivity(intent);
         
         //intent.addFlags(Intent.FLAG_FROM_BACKGROUND);
-        Toast.makeText(getApplicationContext(), "Service command has ben started.",
-                Toast.LENGTH_LONG).show();        
+        //Toast.makeText(getApplicationContext(), "Service command has ben started.",
+        //        Toast.LENGTH_LONG).show();        
        
         return start;
     }
@@ -38,8 +38,8 @@ public class StartService extends Service{
     @Override
     public void onStart(Intent intent, int startId) {
         super.onStart(intent, startId);
-        Toast.makeText(getApplicationContext(), "Service has ben started.",
-                Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(), "Service has ben started.",
+        //        Toast.LENGTH_LONG).show();
       
         //Log.d("TAG", "Service started.");
     }
