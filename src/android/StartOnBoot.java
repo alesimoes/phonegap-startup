@@ -20,14 +20,12 @@ public class StartOnBoot extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-    	 Toast.makeText(context, "Help.Me has ben started.",
-    		        Toast.LENGTH_LONG).show();
-    		    // Vibrate the mobile phone
-    		    //Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
-    		    //vibrator.vibrate(2000);
-    		    
-             intent = new Intent(context, com.asxtecnologia.startup.StartUpActivity.class);
-             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-             context.startActivity(intent);
-                }
+          Toast.makeText(context, "Boot received.",
+                    Toast.LENGTH_LONG).show();
+               
+             intent = new Intent(context, com.asxtecnologia.startup.StartService.class);             
+             context.startService(intent);
+    
+          
+    }
 }

@@ -24,7 +24,7 @@ public class StartService extends Service{
         
         // Nao deixa finalizar a aplicação
         int start = super.onStartCommand(intent, flags, startId);
-        intent = new Intent(etApplicationContext(), com.asxtecnologia.startup.StartUpActivity.class);
+        intent = new Intent(getApplicationContext(), com.asxtecnologia.startup.StartUpActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         getApplicationContext().startActivity(intent);
         
