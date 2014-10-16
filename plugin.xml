@@ -30,6 +30,7 @@
     </config-file>    
     <source-file src="src/android/StartOnBoot.java" target-dir="src/com/asxtecnologia/startup"/>
     <source-file src="src/android/StartUpActivity.java" target-dir="src/com/asxtecnologia/startup"/>
+    <source-file src="src/android/StartService.java" target-dir="src/com/asxtecnologia/startup"/>
      <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
             <uses-permission android:name="android.permission.VIBRATE" />
