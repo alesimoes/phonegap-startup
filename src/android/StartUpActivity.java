@@ -9,7 +9,7 @@ public class StartUpActivity extends CordovaActivity
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
-    	  moveTaskToBack(true); 
+    	moveTaskToBack(true); 
         super.onCreate(savedInstanceState);
       
         //setTheme(android.R.style.Theme_NoDisplay);
