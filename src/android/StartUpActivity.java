@@ -12,6 +12,7 @@ public class StartUpActivity extends CordovaActivity
         super.init();
         // Set by <content src="index.html" /> in config.xml
         super.loadUrl(Config.getStartUrl());       
+       
         //super.loadUrl("file:///android_asset/www/index.html");
     }
 }
